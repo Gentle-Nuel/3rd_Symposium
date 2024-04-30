@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register for the Symposium</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/registration.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+
+<body>
+  <header>
+    <img src="images/FUTO_logo.png" alt="SICT Symposium Logo" class="logo">
+    <div>
+      <h3>Federal University of Technology</h3>
+      <h4>Owerri</h4>
+    </div>
+
+    <div class="hamburger-menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About the Symposium</a></li>
+        <li><a href="registration.html">Registration</a></li>
+        <li><a href="venue.html">Venue</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="registration-form">
+      <h1>Registration Form</h1>
+      <form id="registration-form" action="https://script.google.com/macros/s/AKfycbzZcBMHQxUFaru4bOADBmZymQ9VMrRFshcxdarfvYfIHec2ZsHVaB5i4OogXXG2BmxH/exec" method="post" onsubmit="clearForm()">
+        <div class="form-group">
+          <label for="full_name">Full Name:</label>
+          <input type="text" id="full_name" name="full_name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="education_level">Education Level:</label>
+          <select id="education_level" name="education_level" required>
+            <option value="" disabled selected>Select Education Level</option>
+            <option value="Undergraduate">Undergraduate</option>
+            <option value="Post Graduate Student">Post Graduate Student</option>
+            <option value="Staff">Staff</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="department">Department:</label>
+          <input type="text" id="department" name="department" required>
+        </div>
+        <div class="form-group">
+          <label for="faculty">Faculty/School:</label>
+          <input type="text" id="faculty" name="faculty" required>
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+
+
+  <footer>
+    <p>&copy; FUTO SICT 2024 (Group 33)</p>
+  </footer>
+  
+</body>
+</html>

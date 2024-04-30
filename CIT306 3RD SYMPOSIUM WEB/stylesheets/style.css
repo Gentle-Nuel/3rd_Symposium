@@ -1,0 +1,701 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+header {
+    background-color: #28696a; 
+    color: #fff; 
+    display: flex; 
+    align-items: center; 
+    padding: 10px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    margin-right: 20px;
+}
+
+header div {
+    margin: 0;
+}
+
+header h3, header h4 {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: inherit; 
+    text-decoration: none; 
+    padding: 10px 15px;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    color: #f4ae3f; 
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.registration-btn {
+    margin-top: 40px;
+}
+
+section {
+    min-height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    margin: 0;
+    padding: auto 80px;
+}
+
+.banner {
+    color: #333;
+    display: flex; 
+    align-items: center; 
+    padding: 20px 80px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner-content {
+    padding: 0 40px; 
+    text-align: left; 
+    margin: 0;
+    height: 100%;
+}
+
+.banner-content h1, .banner-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-content h1 {
+    font-family: 'Teko', sans-serif;
+    font-size: 3.5rem;
+}
+
+.banner-content h2 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+}
+
+.banner-content h3 {
+    margin: 0;
+}
+
+.banner-content a {
+    background-color: #28696A; 
+    color: #fff; 
+    padding: 15px 30px;
+    border: none; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    cursor: pointer; 
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.banner-content a:hover {
+    background-color: #F4AE3F; 
+}
+
+.info-container {
+    display: flex; 
+    align-items: center; 
+    font-weight: bold;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.material-symbols-outlined {
+    font-size: inherit; 
+    margin-right: 5px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.symposium-details {
+    background-color: #F0E6D7;
+    padding: 0 80px;
+    display: flex;
+}
+
+.symposium-details img {
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+}
+
+.symposium-details .content {
+    text-align: left;
+}
+
+.symposium-details h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    color: #213058;
+}
+
+.symposium-details li {
+    margin: 20px auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.symposium-details ul {
+    padding: auto;
+}
+
+.who-should-attend {
+    background-color: #28696A;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.who-should {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.who-should-attend img {
+    width: 20rem;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.who-should-attend h2 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+    color: #fff;
+    margin: 0;
+}
+
+.who-should-attend ul {
+    list-style: none;
+    padding: 85px 50px;
+    background-color: #F0E6D7;
+    border-radius: 25px;
+    width: 40%;
+}
+
+.who-should-attend li {
+    margin-bottom: 35px;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #213058;
+}
+
+.tick {
+    color: inherit;
+    font-size: inherit;
+    margin-right: 20px;
+}
+
+.speakers {
+    background-color: #F5F5F5; /* Maintain background color */
+    padding: 40px 80px; /* Adjust padding as needed */
+    display: flex; 
+    flex-direction: column;
+}
+
+.speakers h2 {
+    font-size: 2.2rem; /* Adjust font size as needed */
+    font-weight: bold;
+    text-align: center; /* Center text within its section */
+    /* margin-bottom: 25px; */
+    color: #213058; /* Adjust text color as needed */
+    font-family: 'Roboto', sans-serif; /* Adjust font family as needed */
+}
+
+.speaker-cards {
+    display: flex; /* Adjust layout to flex */
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    gap: 20;
+    justify-content: center; /* Distribute cards evenly */
+}
+
+.speaker-card {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px 40px;
+    margin: 10px; /* Add margin between cards */
+    text-align: center; /* Center content within card */
+    background-color: #fff; /* White background for profile cards */
+    border-radius: 10px; /* Rounded corners for profile cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smoother hover transition */
+}
+
+.speaker-card img {
+    width: 70%; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Rounded corners for images */
+    margin-bottom: 10px; /* Add space below image */
+}
+
+.speaker-card h3 {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    margin-bottom: 5px; /* Add space below name */
+}
+
+.speaker-card p {
+    font-size: 0.9rem; /* Adjust font size as needed */
+    color: #333; /* Lighter text color */
+}
+
+.speaker-card:hover {
+    transform: scale(1.03); /* Slight zoom effect on hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+
+.special-guest-chief-host {
+    background-color: #F0E6D7;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.special-guest-chief-host h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #213058;
+    font-family: 'Roboto', sans-serif;
+}
+
+.special-guest-chief-host .profile-card {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px 10px;
+    text-align: center;
+    width: 80%;
+    height: 30rem;
+    margin: 0 auto;
+    padding: auto 30px;
+}
+
+.special-guest, .chief-host {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.special-guest-chief-host .profile-card img {
+    width: 70%;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.special-guest-chief-host .profile-card h3,
+.special-guest-chief-host .profile-card p {
+    margin-bottom: 5px;
+}
+
+.profile-card a {
+    text-decoration: none;
+    color: #333;
+}
+
+.profile-card a:hover {
+    color: #666;
+}
+
+.contact {
+    background-color: #28696A;
+    padding: 0 40px;
+    color: #fff;
+    min-height: 30vh;
+}
+
+.contact-head {
+    margin-right: 10rem;
+    text-align: left;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-persons {
+    display: flex;
+    gap: 10rem;
+}
+
+.contact p:first-child {
+    margin-bottom: 15px;
+}
+
+.contact-person {
+    margin-bottom: 10px;
+}
+
+.contact-person h3 {
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+}
+
+.contact-person p {
+    margin-bottom: 3px;
+}
+
+.contact-person a {
+    color: #F0E6D7;
+    text-decoration: none;
+}
+
+.contact-person a:hover {
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: .8rem;
+}
+
+@media (min-width: 768px) {
+    .hamburger-menu {
+        display: none;
+    }
+
+    header div {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    header div {
+        display: none;
+    }
+
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 25px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: .7rem;
+    }
+
+    .banner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 40px;
+    }
+
+    .banner img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .banner-content {
+        text-align: center;
+    }
+
+    .details {
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    .info-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+    .material-symbols-outlined {
+        margin-right: 5px;
+    }
+
+    .symposium-details {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .symposium-details img {
+        width: 100%;
+    }
+
+    .details-container {
+        margin-bottom: 20px;
+    }
+
+    .symposium-details ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .symposium-details li {
+        margin-bottom: 15px;
+    }
+
+    .who-should-attend {
+        flex-direction: column; /* Change layout to vertical */
+        align-items: center; /* Center items horizontally */
+        text-align: center; /* Center text within the section */
+        padding: 40px;
+    }
+
+    .who-should img {
+        width: 60%; /* Adjust image width */
+    }
+
+    .who-should h2 {
+        font-size: 3rem; /* Adjust font size */
+        margin-top: 20px; /* Add space above heading */
+    }
+
+    .who-should-attend ul {
+        width: 60%;
+        text-align: left;
+        padding: 40px;
+    }
+
+    .who-should-attend li {
+        font-size: 1.0rem; /* Adjust font size */
+        margin-bottom: 15px; /* Add space between list items */
+    }
+
+    .speakers {
+        padding: 40px; /* Adjust padding for smaller screens */
+        margin: 0 auto; /* Adjust margin for better spacing */
+
+    }
+
+    .speakers h2 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .speaker-cards {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center; /* Center cards horizontally */
+    }
+
+    .speaker-card {
+        width: 80%; /* Make cards full width on smaller screens */
+        max-width: none; /* Remove max-width to allow full width */
+        margin: 10px auto; /* Adjust margin for better spacing */
+    }
+
+    .speaker-card img {
+        width: 50%; /* Adjust image width for smaller screens */
+    }
+
+    .special-guest-chief-host {
+        padding: 40px; /* Adjust padding for smaller screens */
+        flex-direction: column;
+    }
+
+    .special-guest,
+    .chief-host {
+        text-align: center; /* Center content */
+        width: 100%;
+        height: 50%;
+        margin-bottom: 40px;
+    }
+
+    .special-guest h2,
+    .chief-host h2 {
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
+        margin-bottom: 20px; /* Add space below headings */
+    }
+
+    .profile-card {
+        width: 100%; /* Adjust width for smaller screens */
+        padding: 20px;
+        background-color: #fff; /* White background for profile cards */
+        border-radius: 10px; /* Rounded corners for profile cards */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smoother hover transition */
+    }
+
+    .profile-card img {
+        width: 70%; /* Adjust image width for smaller screens */
+        border-radius: 50%; /* Rounded corners for images */
+        margin-bottom: 10px; /* Add space below image */
+    }
+
+    .profile-card h3 {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        margin-bottom: 5px; /* Add space below the name */
+    }
+
+    .profile-card p {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+        line-height: 1.3;
+        margin-bottom: 0;
+    }
+
+    .profile-card:hover {
+        transform: scale(1.03); /* Slight zoom effect on hover */
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px; /* Adjust padding for smaller screens */
+    }
+
+    .contact-head {
+        align-items: center;
+        text-align: center; /* Center content */
+        margin: 0 auto 20px; /* Add space below the contact heading */
+    }
+
+    .contact h2 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+        margin-bottom: 10px; /* Add space below the heading */
+    }
+
+    .contact-persons {
+        display: flex;
+        flex-direction: column; /* Stack contact persons vertically */
+        gap: 20px;
+        margin: 0 auto 10px;
+        text-align: center;
+    }
+
+    .contact-person {
+        /* background-color: #fff; */
+        border-radius: 10px; /* Rounded corners for contact person cards */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+        padding: 20px; /* Add padding to contact person cards */
+    }
+
+    .contact-person h3 {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        margin-top: 0;
+        margin-bottom: 20px; /* Add space below the name */
+    }
+
+    .contact-person p {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+        /* margin-bottom: 2px; */
+        line-height: .5;
+    }
+
+    .contact-person a {
+        color: #F0E6D7; /* Link color */
+        text-decoration: none; /* Remove underline */
+    }
+
+    .contact-person a:hover {
+        color: #213058; /* Change text color on hover */
+    }
+    
+}
